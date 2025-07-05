@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+  color: #212529;
+}
+.hero {
+  background: linear-gradient(to right, #1c1c2c, #2a2a4c);
+  color: white;
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+}
+.overlay {
+  max-width: 960px;
+  margin: auto;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  background: #ffc107;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+nav {
+  background: #212529;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a {
+  color: #ffffffcc;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #ffc107;
+}
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+}
+h2 {
+  border-left: 5px solid #ffc107;
+  padding-left: 0.6rem;
+  margin-top: 2rem;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  background: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 4px solid #ffc107;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.projects li {
+  margin: 0.5rem 0;
+}
+footer {
+  background: #1c1c2c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.expandable .content {
+  display: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.expandable .content.show {
+  display: block;
+  animation: fadeIn 0.4s ease-in;
+}
+.expandable h2 {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  font-size: 1.2rem;
+  color: #ffc107;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.quick-links {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.quick-btn {
+  display: inline-block;
+  margin: 0 0.4rem;
+  padding: 0.5rem 1rem;
+  background: #17a2b8;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.quick-btn:hover {
+  background: #138496;
+}
+
+
+section, .card, .skills-grid div, .projects li, .content {
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+main section {
+  padding-bottom: 2rem;
+}
+
+h1, h2, h3, p {
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.quick-links {
+  margin: 1rem auto 2rem;
+}
+.quick-btn {
+  display: inline-block;
+  margin: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  background: #17a2b8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.quick-btn:hover {
+  background: #138496;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cert-card {
+  background: white;
+  padding: 1rem;
+  border-left: 4px solid #ffc107;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+.cert-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.cert-btn:hover {
+  background: #0056b3;
+}
